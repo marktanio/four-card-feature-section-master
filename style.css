@@ -13,10 +13,8 @@
 
 *{
     font-family: var(--font-family);
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 h1,h3{
@@ -57,26 +55,24 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;    
-    width: 100vw;
-    height:100vh
+    overflow: scroll;
 }
 
 .description {
     max-width: 500px;
     text-align: center;
-    margin-block: 20px;
+    margin-block: 1.25rem;
 }
 
 .cards{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px;
     flex-wrap: wrap;
 }
 
 .card {
-    width:325px;
+    width: 325px;
     height:235px;
     box-shadow: 0px 0px 53px -22px rgba(0,0,0,0.55);
     padding:30px;
@@ -106,4 +102,18 @@ body{
 .icon {
     margin-left: auto;
     margin-top: 20px;
+}
+
+@media (max-width: 1314px) {
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+    }
+
+    .card{
+        margin:0;
+    }
+
 }
